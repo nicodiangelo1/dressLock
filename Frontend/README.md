@@ -1,4 +1,4 @@
-# travelscanner
+# dressLock
 
 ## Project setup
 ```
