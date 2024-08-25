@@ -4,8 +4,8 @@ Este proyecto es una aplicación web que incluye un sistema de autenticación b�
 
 ## Vistas Realizadas
 
-- [x] **Inicio de Sesión**
-- [x] **Registro**
+- **Inicio de Sesión** ✅
+- **Registro** ✅
 
 ## Características Principales
 
