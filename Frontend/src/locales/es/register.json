@@ -1,9 +1,9 @@
 {
+  "titulo": "Registro",
   "nombre": "Nombre",
   "email": "Correo electrónico",
   "pais": "País",
   "password": "Contraseña",
-  "titulo": "Crear una cuenta",
   "passwordConfirm": "Confirmar Contraseña",
   "registrarse": "Registrarse",
   "yaTienesCuenta": "¿Ya tienes cuenta y quieres acceder?",
@@ -12,5 +12,24 @@
   "errorMessage": "Por favor, completa los campos correctamente",
   "passwordMismatch": "Las contraseñas no coinciden",
   "success": "Éxito",
-  "error": "Error"
+  "error": "Error",
+  "validation": {
+    "nombre": {
+      "required": "Por favor, introduce tu nombre"
+    },
+    "email": {
+      "required": "Por favor, introduce tu correo",
+      "invalid": "Introduce un correo válido"
+    },
+    "pais": {
+      "required": "Por favor, introduce tu país"
+    },
+    "password": {
+      "required": "Por favor, introduce tu contraseña"
+    },
+    "passwordConfirm": {
+      "required": "Por favor, confirma tu contraseña",
+      "mismatch": "Las contraseñas no coinciden"
+    }
+  }
 }

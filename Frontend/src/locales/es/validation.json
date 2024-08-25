@@ -4,6 +4,8 @@
     "invalid": "Introduce un correo válido"
   },
   "password": {
-    "required": "Por favor, introduce tu contraseña"
+    "required": "Por favor, introduce tu contraseña",
+    "confirmPass": "Las contraseñas no coinciden"
+
   }
 }

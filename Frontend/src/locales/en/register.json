@@ -1,15 +1,35 @@
 {
+  "titulo": "Register",
   "nombre": "Name",
   "email": "Email",
   "pais": "Country",
-  "titulo": "Sign up",
   "password": "Password",
   "passwordConfirm": "Confirm Password",
+  "registrarse": "Sign Up",
   "yaTienesCuenta": "Already have an account?",
   "hazClickAqui": "Click here",
   "successMessage": "You have registered successfully",
   "errorMessage": "Please complete the fields correctly",
   "passwordMismatch": "Passwords do not match",
   "success": "Success",
-  "error": "Error"
+  "error": "Error",
+  "validation": {
+    "nombre": {
+      "required": "Please enter your name"
+    },
+    "email": {
+      "required": "Please enter your email",
+      "invalid": "Please enter a valid email"
+    },
+    "pais": {
+      "required": "Please enter your country"
+    },
+    "password": {
+      "required": "Please enter your password"
+    },
+    "passwordConfirm": {
+      "required": "Please confirm your password",
+      "mismatch": "Passwords do not match"
+    }
+  }
 }
