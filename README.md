@@ -1,4 +1,4 @@
-# Nombre del Proyecto
+# DressLock
 
 Este proyecto es una aplicación web que incluye un sistema de autenticación básico con vistas para el **Inicio de Sesión** y **Registro**. El proyecto también soporta internacionalización, lo que permite a los usuarios utilizar la aplicación en diferentes idiomas.
 
