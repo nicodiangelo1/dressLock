@@ -6,6 +6,7 @@
   "mensajeNoRegistrado": "Don't have an account?",
   "clickAqui": "Click here",
   "successMessage": "You have logged in successfully",
+  "incorrectCredentials": "Incorrect credentials",
   "errorMessage": "Please complete the fields correctly",
   "success": "Success",
   "error": "Error"

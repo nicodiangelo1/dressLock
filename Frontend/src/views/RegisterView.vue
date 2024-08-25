@@ -81,6 +81,8 @@ import NormalInput from "@/components/inputs/NormalInput";
 import AutocompleteInput from "@/components/inputs/AutocompleteInput";
 import { User, Lock, Check, Location, Postcard } from "@element-plus/icons-vue";
 import { ElNotification } from "element-plus";
+import { useRouter } from 'vue-router';
+import { useStore } from 'vuex';
 
 export default {
   name: "RegisterView",
@@ -89,6 +91,8 @@ export default {
     AutocompleteInput,
     Check,
   },
+
+  
   data() {
     return {
       paises: [
@@ -365,6 +369,15 @@ export default {
           { validator: this.validatePasswordConfirm, trigger: "blur" },
         ],
       },
+    };
+  },
+  setup() {
+    const router = useRouter();
+    const store = useStore();
+
+    return {
+      router,
+      store,
     };
   },
   methods: {

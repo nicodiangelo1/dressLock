@@ -51,6 +51,8 @@
 </template>
 
 <script>
+import { useRouter } from 'vue-router';
+import { useStore } from 'vuex';
 import NormalInput from "@/components/inputs/NormalInput";
 import { Unlock, User, Lock } from "@element-plus/icons-vue";
 import { ElNotification } from "element-plus";
@@ -90,6 +92,14 @@ export default {
       },
     };
   },
+  setup() {
+    const router = useRouter();
+    const store = useStore();
+    return {
+      router,
+      store,
+    };
+  },
   methods: {
     getLockIcon() {
       return Lock;
@@ -97,19 +107,32 @@ export default {
     getUserIcon() {
       return User;
     },
-    onSubmit() {
-      this.$refs.loginForm.validate((valid) => {
+    async onSubmit() {
+      this.$refs.loginForm.validate(async (valid) => {
         if (valid) {
-          ElNotification({
-            title: this.$t("success"),
-            message: this.$t("login.successMessage"),
-            type: "success",
-            position: "bottom-right",
-          });
-          // Aquí puedes proceder con el envío del formulario
+          try {
+            await this.store.dispatch('auth/login', {
+              email: this.form.email,
+              password: this.form.password,
+            });
+            this.router.push('/dashboard'); 
+            ElNotification({
+              title: this.$t("success"),
+              message: this.$t("login.successMessage"),
+              type: "success",
+              position: "bottom-right",
+            });
+          } catch (error) {
+            ElNotification({
+              title: this.$t("login.error"),
+              message: this.$t("login.incorrectCredentials"),
+              type: "error",
+              position: "bottom-right",
+            });
+          }
         } else {
           ElNotification({
-            title: this.$t("error"),
+            title: this.$t("login.error"),
             message: this.$t("login.errorMessage"),
             type: "error",
             position: "bottom-right",
