@@ -4,8 +4,8 @@ Este proyecto es una aplicación web que incluye un sistema de autenticación b�
 
 ## Vistas Realizadas
 
-- [x] **Inicio de Sesión (Login)**
-- [x] **Registro (Register)**
+- [x] **Inicio de Sesión**
+- [x] **Registro**
 
 ## Características Principales
 
@@ -37,4 +37,4 @@ El proyecto también maneja los estados de los formularios y proporciona notific
 1. Clona el repositorio:
 
    ```bash
-   git clone [[git@github.com:nicodiangelo1/dressLock.git](https://github.com/nicodiangelo1/dressLock.git))
+   git clone [https://github.com/nicodiangelo1/dressLock.git]
