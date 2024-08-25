@@ -1,0 +1,16 @@
+{
+  "nombre": "Nombre",
+  "email": "Correo electrónico",
+  "pais": "País",
+  "password": "Contraseña",
+  "titulo": "Crear una cuenta",
+  "passwordConfirm": "Confirmar Contraseña",
+  "registrarse": "Registrarse",
+  "yaTienesCuenta": "¿Ya tienes cuenta y quieres acceder?",
+  "hazClickAqui": "Haz clic aquí",
+  "successMessage": "Te has registrado correctamente",
+  "errorMessage": "Por favor, completa los campos correctamente",
+  "passwordMismatch": "Las contraseñas no coinciden",
+  "success": "Éxito",
+  "error": "Error"
+}

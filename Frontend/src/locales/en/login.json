@@ -1,0 +1,12 @@
+{
+  "email": "Email",
+  "clave": "Password",
+  "acceder": "Login",
+  "titulo": "Sign in",
+  "mensajeNoRegistrado": "Don't have an account?",
+  "clickAqui": "Click here",
+  "successMessage": "You have logged in successfully",
+  "errorMessage": "Please complete the fields correctly",
+  "success": "Success",
+  "error": "Error"
+}

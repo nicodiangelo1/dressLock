@@ -1,0 +1,12 @@
+{
+  "email": "Correo electrónico",
+  "clave": "Contraseña",
+  "acceder": "Acceder",
+  "titulo": "Inicio de sesión",
+  "mensajeNoRegistrado": "¿No tienes una cuenta?",
+  "clickAqui": "Haz clic aquí",
+  "successMessage": "Has accedido correctamente",
+  "errorMessage": "Por favor, completa los campos correctamente",
+  "success": "Éxito",
+  "error": "Error"
+}

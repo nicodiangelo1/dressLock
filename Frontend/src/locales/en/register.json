@@ -1,0 +1,15 @@
+{
+  "nombre": "Name",
+  "email": "Email",
+  "pais": "Country",
+  "titulo": "Sign up",
+  "password": "Password",
+  "passwordConfirm": "Confirm Password",
+  "yaTienesCuenta": "Already have an account?",
+  "hazClickAqui": "Click here",
+  "successMessage": "You have registered successfully",
+  "errorMessage": "Please complete the fields correctly",
+  "passwordMismatch": "Passwords do not match",
+  "success": "Success",
+  "error": "Error"
+}

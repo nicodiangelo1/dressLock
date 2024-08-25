@@ -1,0 +1,9 @@
+{
+  "email": {
+    "required": "Please enter your email",
+    "invalid": "Please enter a valid email"
+  },
+  "password": {
+    "required": "Please enter your password"
+  }
+}
