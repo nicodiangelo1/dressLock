@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import store from '../store';
 import LoginView from "../views/LoginView.vue";
 import RegisterView from "@/views/RegisterView.vue";
+import DashboardView from '@/views/DashboardView.vue';
 const routes = [
 
   {
@@ -24,6 +25,17 @@ const routes = [
         next('/dashboard'); // Redirige si el usuario ya está autenticado
       } else {
         next(); // Permite el acceso a la ruta de login si no está autenticado
+      }
+    },
+  },
+  {
+    path: '/dashboard',
+    component: DashboardView,
+    beforeEnter: (to, from, next) => {
+      if (store.getters['auth/isAuthenticated']) {
+        next(); // Redirige si el usuario ya está autenticado
+      } else {
+        next('/login'); // Permite el acceso a la ruta de login si no está autenticado
       }
     },
   },
